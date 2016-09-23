@@ -1,4 +1,4 @@
-package learn.java.home.Other;
+package learn.java.home.Recursion;
 
 class Factorial{
 	int factorial(int n){
