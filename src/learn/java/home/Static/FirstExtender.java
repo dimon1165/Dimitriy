@@ -11,8 +11,9 @@ public class FirstExtender extends First{
 		First.k =10; 
 		First.MethodStatic();
 		MethodStatic();
-		getStatic();
 	}
+	
+//	Over hidden
 	public static void MethodStatic(){
 		System.out.println("MethodStatic 2");
 	}
