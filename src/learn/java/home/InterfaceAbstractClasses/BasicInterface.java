@@ -1,7 +1,7 @@
 package learn.java.home.InterfaceAbstractClasses;
 
 /*
- * If we have to interfaces with same methods name
+ * If we have two interfaces with same methods name
  * compiler will think about method as it is the same one  
  * But if everything will be equals only returning type will be
  * different it will cause to compilation problem 
