@@ -28,6 +28,8 @@ hs_err_pid*
 /.checkstyle
 
 .idea/
+.DS_Store
+/.DS_Store
 *.iml
 
 # ignore doc/notes.txt, but not doc/info/arch.txt
