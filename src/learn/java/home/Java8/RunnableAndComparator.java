@@ -3,8 +3,7 @@ package learn.java.home.Java8;
 import learn.java.home.Threads.NewThread;
 
 /**
- *
- *
+ * Как пример для интерфейса Runnable
  */
 public class RunnableAndComparator {
     public static void main(String[] args) throws InterruptedException {
