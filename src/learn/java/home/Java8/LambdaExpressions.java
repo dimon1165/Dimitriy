@@ -18,6 +18,7 @@ import java.io.FileFilter;
   *          return file.getName().endsWith(".java");
   *          }
   *  };
+  *
   * Для того чтобы использовать Lambda Expression мы:
   * 1. Берем из public boolean accept(File file) аргументы (File file);
   * 2. Затем добавляем ->;
@@ -26,6 +27,8 @@ import java.io.FileFilter;
 
 public class LambdaExpressions {
     public static void main(String[] args) {
+//      Когда мы наследуем интерфейс всегда есть необходимость переопределять метод,
+//      чтобы упростить запись можно использовать лямбда выражение как показано ниже
         FileFilter fileFilter = (File file) -> file.getName().endsWith(".java");
         File dir = new File("");
         File[] files = dir.listFiles(fileFilter);
