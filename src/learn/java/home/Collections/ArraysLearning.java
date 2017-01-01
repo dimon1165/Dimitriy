@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.lang3.ArrayUtils;
+
 
 public class ArraysLearning {
 	
@@ -32,9 +32,10 @@ public class ArraysLearning {
 		
 //		Ususal Java dont allow delete element from araray
 //		but we can do it by using commons.apache.org library:Javadocs
-			object = ArrayUtils.remove(object, 2);
-			System.out.println(Arrays.toString(object));	
-			
+//			object = ArrayUtils.remove(object, 2);
+//			System.out.println(Arrays.toString(object));	
+
+		
 //		Arrays inside array
 		int array2 [] = new int [10];
 		int array1 [] = new int [10];
