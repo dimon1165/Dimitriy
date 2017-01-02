@@ -25,6 +25,8 @@ import java.util.Comparator;
  * - лямбда может быть помещена в переменную.
  * Например в переменную с:
  * Comparator<String> c = (String s1, String s2 )-> Integer.compare(s1.length(),s2.length());
+ * Также можно написать без указания типов параметров:
+ * Comparator<String> c = (s1, s2)-> Integer.compare(s1.length(),s2.length());
  *
  * Lambda Expressions создается без использования ключевого слова "new". Это отличет лямбда инстанса
  * анонимного класса, когда используется лямбда выражение джавамашина не создает инстантс каждый раз.
