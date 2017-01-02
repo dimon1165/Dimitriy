@@ -1,11 +1,8 @@
 package learn.java.home.Java8;
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-import learn.java.home.Collections.ComparatorLearn;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.util.Comparator;
 
 /**
  *
