@@ -58,38 +58,34 @@ public class StreamLearning {
         // 2. Другой вариант стрима:
         // Заносим данные в стрим
         Stream<String> stream2 = Stream.of(Dmitriy.getName(),
-                                            Dmitriy.getSureName(),
-                                            Dmitriy.getAddress(),
-                                            Dmitriy.getEmail(),
-                                            Dmitriy.getAge(),
-                                            Dmitriy.getWeight());
+                Dmitriy.getSureName(),
+                Dmitriy.getAddress(),
+                Dmitriy.getEmail(),
+                Dmitriy.getAge(),
+                Dmitriy.getWeight());
         //Для того, чтобы отфильтровть этот лист необходимо создать предикат класс
         Predicate<String> predicate1 = s -> s.length() > 8;
-                stream2
-                        .filter(predicate1)
-                        .forEach(s -> System.out.println(s));
+        stream2
+                .filter(predicate1)
+                .forEach(s -> System.out.println(s));
 
         System.out.println();
 
         //Можем так же найти информацию, которая равна заданной
-        //А также можем чейнить в фильтре условия:
-        Stream<String> stream3 = Stream.of( Dmitriy.getName(),
-                                            Dmitriy.getSureName(),
-                                            Dmitriy.getAddress(),
-                                            Dmitriy.getEmail(),
-                                            Dmitriy.getAge(),
-                                            Dmitriy.getWeight());
+        //А также можем чейнить в фильтре условия
+        //Можно стрим листа сортировать и результат записывать в другой лист
+        Stream<String> stream3 = Stream.of(Dmitriy.getName(),
+                Dmitriy.getSureName(),
+                Dmitriy.getAddress(),
+                Dmitriy.getEmail(),
+                Dmitriy.getAge(),
+                Dmitriy.getWeight());
         Predicate<String> predicate2 = Predicate.isEqual("Voropai");
-                stream3
-                        .filter(predicate2.or(predicate1))
-                        .forEach(s -> System.out.println(s));
-
-        // 3. Можно стрим листа сортировать и результат записывать в другой лист:
-        Predicate<String> predicate3 = s -> s.length() > 10;
-        List<String> result = new ArrayList<>();
-        Stream<String> stringStream = person
-                .stream()
-                .filter(predicate3)
-                .peek(result::add);
+        List<String> streamList = new ArrayList<>();
+        stream3
+                .peek(System.out::println)
+                .filter(predicate2.or(predicate1))
+                .forEach(streamList::add);
+        System.out.println("The size of steamList is " +streamList.size());
     }
 }
