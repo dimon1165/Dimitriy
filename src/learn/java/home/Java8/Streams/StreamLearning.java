@@ -73,7 +73,6 @@ public class StreamLearning {
 
         //Можем так же найти информацию, которая равна заданной
         //А также можем чейнить в фильтре условия
-        //Можно стрим листа сортировать и результат записывать в другой лист
         Stream<String> stream3 = Stream.of(Dmitriy.getName(),
                 Dmitriy.getSureName(),
                 Dmitriy.getAddress(),
@@ -81,6 +80,7 @@ public class StreamLearning {
                 Dmitriy.getAge(),
                 Dmitriy.getWeight());
         Predicate<String> predicate2 = Predicate.isEqual("Voropai");
+        //Можно стрим листа сортировать и результат записывать в другой лист
         List<String> streamList = new ArrayList<>();
         stream3
                 .peek(System.out::println)
