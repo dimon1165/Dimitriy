@@ -1,5 +1,21 @@
 package learn.java.home.InterfaceAbstractClasses;
 
+
+/**
+ * -Abstract class could not be final because by definition it is complete.
+ * -Abstract methods dont have a body.
+ * -If a class has any abstract methods, then it must be declared abstract
+ * -Abstract class can has constructor:
+ * You would define a constructor in an abstract class if you are in one of these situations:
+ * 1. You want to perform some initialization (to fields of the abstract class) before the instantiation of a subclass
+ * actually takes place
+ * 2. You have defined final fields in the abstract class but you did not initialize them in the declaration itself.
+ * In this case, you MUST have a constructor to initialize these fields
+ * -We have to override all abstract methods from superclass or change class to abstract
+ * -Abstact class could implement interface
+ *
+ * */
+
 //abstract class could not be final because by definition it is complete
 public abstract class AbstractClasss {
 	final int k;
