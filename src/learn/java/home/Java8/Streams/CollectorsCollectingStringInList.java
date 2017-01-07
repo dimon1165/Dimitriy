@@ -70,6 +70,11 @@ public class CollectorsCollectingStringInList {
                         .collect(Collectors.groupingBy(People::getAge,Collectors.counting()));
         System.out.println(ListMap);
 
-
+        //по порядку, но с записью имен в TreeSet
+        Map<Integer, Set<String>> listMap =
+        peoples.stream()
+                .collect(Collectors.groupingBy(People::getAge,
+                        Collectors.mapping(People::getName,Collectors.toCollection(TreeSet::new))));
+        System.out.println(listMap);
     }
 }
