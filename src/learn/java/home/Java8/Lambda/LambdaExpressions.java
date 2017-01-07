@@ -1,4 +1,4 @@
-package learn.java.home.Java8;
+package learn.java.home.Java8.Lambda;
 
 
 import java.io.File;

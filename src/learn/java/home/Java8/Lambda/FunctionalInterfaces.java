@@ -1,4 +1,4 @@
-package learn.java.home.Java8;
+package learn.java.home.Java8.Lambda;
 
 /**
  * Разделяются на 4 категории:

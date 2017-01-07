@@ -1,4 +1,4 @@
-package learn.java.home.Java8;
+package learn.java.home.Java8.Lambda;
 
 import learn.java.home.Threads.NewThread;
 
