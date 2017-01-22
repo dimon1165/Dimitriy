@@ -15,4 +15,5 @@ package learm.java.jdbc;
 * JDBC driver of Oracle database with help of:
 * Class.forName("oracle.jdbc.driver.OracleDriver");
 * Driver Manager has methods - getConnection and getDrivers.
+*
 * */
