@@ -13,6 +13,11 @@ import java.sql.*;
  * - We can use the same SQL query and supplies it with different values.
  * To use Prepared statement we need to use method set(position, value);
  *
+ * If we would like to insert or update table with help of PS we nedd to write like this:
+ * PreparedStatement preparedStatement = conn.preparedStatement(insert into <table name> values(?,?,?,?,?));
+ *
+ * If we would like to call stored procedure we need to use callable statement like this:
+ * CallableStatement cstm = conn.prepareCall("{call StoredProcedureName([Parameter Definition])}")
  */
 public class JavaToPostgresPrepearedStatement {
 //    Set up the driver, url and password to db
