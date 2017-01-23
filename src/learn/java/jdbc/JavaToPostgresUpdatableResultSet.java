@@ -1,4 +1,4 @@
-package learm.java.jdbc;
+package learn.java.jdbc;
 
 import java.sql.*;
 
@@ -6,8 +6,15 @@ import java.sql.*;
  *
  * Created by Voropai_Dmytro on 22.01.17.
  * Using try with resources.
+ * Using updatable resultSet.
+ * Contains methods for updating resultSets:
+ * - public void updateString(int columnIndex, String s) - changes string in the specified column;
+ * - public void updateString(String columnName, String s) - changes string in the specified column by passing name.
+ * If we would like to update row in database we need to use updateRow(); deleteRow(); refreshRow(); cancelRowUpdates()
+ * insertRow() .
+ *
  */
-public class JavaToPostgresUsualResultSetTryWithResourses {
+public class JavaToPostgresUpdatableResultSet {
 //    Set up the driver, url and password to db
     private static final String JDBC_POSTGRESQL_URL = "jdbc:postgresql://localhost:5432/postgres";
     public static final String PASSWORD = "";
@@ -24,19 +31,19 @@ public class JavaToPostgresUsualResultSetTryWithResourses {
 
 //        Try with resources
         try (Connection connection = DriverManager.getConnection(JDBC_POSTGRESQL_URL, USER, PASSWORD);
-             Statement statement = connection.createStatement();
+//         here we make result set scrollable and updatable read only
+             Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
              ResultSet resultSet = statement.executeQuery("SELECT * FROM \"Countries\".\"Country\"");
              )
         {
-//            Iterate on statement
-            while (resultSet.next()){
-//                set format of printing result on screen
-                String format = "%-20s%-20s%-20s%-20s\n";
-                System.out.format(format,resultSet.getString("France"),
-                                         resultSet.getString("Ukraine"),
-                                         resultSet.getString("United States"),
-                                         resultSet.getString("Ganduras"));
-            }
+//            set cursor on second row
+            resultSet.absolute(2);
+
+//          update the row
+            resultSet.updateString("France","Francoise");
+            resultSet.updateRow();
+
+            System.out.println("Record updated successfully");
         } catch (SQLException e) {
             e.printStackTrace();
             e.getMessage();

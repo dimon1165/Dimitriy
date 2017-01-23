@@ -1,4 +1,4 @@
-package learm.java.jdbc;
+package learn.java.jdbc;
 
 import java.sql.*;
 
