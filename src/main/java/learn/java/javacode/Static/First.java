@@ -2,7 +2,7 @@ package learn.java.javacode.Static;
 
 /**
  *
- *Static belong to the class.
+ * Static belong to the class.
  * If something is static that means that it is creating only once in memory during class loading.
  * - VARIABLE - if variable is static that means it was created in memory only once and can be use trough class name.
  * It is memory efficient because we can create static var for field wich is the ame for all clases.
@@ -13,6 +13,7 @@ package learn.java.javacode.Static;
  * 1. Cannot use non-static data or call non-static method directly.
  * 2. Key word this and super cannot be use in static context.
  * - CLASS - if class is nested(inside another class) we can use static word to call it from main class.
+ *  Static import is for taking elements of class without calling thought class.
  *
  * */
 

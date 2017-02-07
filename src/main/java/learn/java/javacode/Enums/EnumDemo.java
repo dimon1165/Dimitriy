@@ -1,7 +1,11 @@
 package learn.java.javacode.Enums;
 
+/**
+ * When we want to limit a type to a limit number of values we use Enums
+ *
+ * */
 public class EnumDemo{
-   
+
 	public enum Apple{
 		JHON ("http://localhost:8080/HealthBody-WebService/listener/%s/%d/%s"),
 		GOLDEN("http://localhost:8080/HealthBody-WebService"),
