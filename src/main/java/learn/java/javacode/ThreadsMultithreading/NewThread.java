@@ -1,4 +1,4 @@
-package learn.java.javacode.Threads;
+package learn.java.javacode.ThreadsMultithreading;
 
 public class NewThread implements Runnable {
 	Thread thread;

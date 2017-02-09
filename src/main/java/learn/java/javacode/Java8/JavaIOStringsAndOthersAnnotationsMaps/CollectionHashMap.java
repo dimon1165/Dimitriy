@@ -29,5 +29,7 @@ public class CollectionHashMap {
         list.sort(Comparator.naturalOrder());
         System.out.println(
                 list.stream().collect(Collectors.joining(", ")));
+
+        //Remove if exists - use removeIf() method
     }
 }
