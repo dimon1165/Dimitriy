@@ -6,6 +6,13 @@ import java.sql.*;
  *
  * Created by Voropai_Dmytro on 22.01.17.
  * Using try with resources.
+ * Resources is all what implemented AutoCloseable interface.
+ * For indication try with resources we should indicate "resources" by putting the into try() and they exists
+ * during the life of try statement.
+ * Close method from try-with-resources block calls any time even if we have not called it explicitly.
+ * If exception thrown form resources and the same exception will be thrown from close method of AutoCloseable
+ * the JVM will show only one exception thrown by resources and will not show exception from close() method.
+ * Java track it as suppressed exception.
  */
 public class JavaToPostgresUsualResultSetTryWithResourses {
 //    Set up the driver, url and password to db
