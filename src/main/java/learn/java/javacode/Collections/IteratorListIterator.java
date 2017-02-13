@@ -14,7 +14,7 @@ public class IteratorListIterator {
 		listString.add("B");
 		listString.add("D");
 		listString.add("F");
-//		Ususal iterator
+//		Usual iterator
 		Iterator<String> iterator = listString.iterator();
 		while(iterator.hasNext()){
 			String element = iterator.next();
