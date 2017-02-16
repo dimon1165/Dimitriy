@@ -1,4 +1,4 @@
-package learn.java.javacode.ThreadsMultithreading;
+package learn.java.javacode.ThreadsMultithreading.MultyThreading;
 
 public class CurrentClassDemo {
 	public static void main(String[] args) {
