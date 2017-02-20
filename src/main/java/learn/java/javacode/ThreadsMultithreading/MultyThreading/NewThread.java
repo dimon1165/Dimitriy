@@ -6,7 +6,7 @@ public class NewThread implements Runnable {
 	public NewThread() {
 //		новый поток исполнения 
 		thread = new Thread(this, "Demo thread");
-		System.out.println("Inherited trhread was created" + thread);
+		System.out.println("Inherited thread was created" + thread);
 		thread.start();
 	} 
 	
