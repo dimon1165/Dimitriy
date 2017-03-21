@@ -8,8 +8,8 @@ package learn.java.javacode.InnerNestedClasses;
  *
  * Types of innner classes:
  * 1. Nested class:
- * -static inner clas
- * Has acces only to static variables.
+ * -static inner class
+ * Has access only to static variables.
  * 2. Member inner class:
  * - when we create instance of class which is in antoher location and not inner (Inner inner = new Inner();)
  * in one of the Oter class methods.
