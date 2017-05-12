@@ -1,6 +1,11 @@
 package learn.java.javacode.Collections;
 
+import sun.plugin.javascript.navig.Array;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -8,15 +13,47 @@ public class ArrayLists {
 	public static void main(String[] args) {
 //		Конструктор листа может назначать базовую длинну - 10 элементов к примеру
 		List<String> stringList = new ArrayList<String>(4);
+		Collections.synchronizedList(stringList);
 		stringList.add("September");
 		stringList.add("October");
 		stringList.add("November");
 		stringList.add("December");
 		stringList.add("January");
 		stringList.add("October");
+
+		List<Integer> listInt = new LinkedList<>();
+		listInt.add(45);
+		listInt.add(4523);
+		listInt.add(451);
 //		размер 
 		System.out.println(stringList.size());
-		
+
+		System.out.println("\n");
+		System.out.println("----------------------------COLLECTIONS BEGIN-------------------------------");
+//		COLLECTIONS:
+//		Reverse order
+		Collections.reverse(stringList);
+		System.out.println("reverse"+ "\n" + stringList);
+//		Sorting
+		Collections.sort(stringList);
+		System.out.println("sort"+ "\n" + stringList);
+
+//		returns min element
+//		gets minim element in collection and takes it index
+//		then removes it
+		int elem = Collections.min(listInt);
+		int indx = listInt.indexOf(elem);
+		listInt.remove(indx);
+		System.out.println("min= "+ Collections.min(listInt)+"\n");
+
+//		max
+		elem = Collections.max(listInt);
+		System.out.println("max= "+ Collections.max(listInt)+"\n");
+
+		System.out.println("----------------------------COLLECTIONS END-------------------------------");
+		System.out.println("\n");
+
+
 //		получить по индексу элемент
 		System.out.println(stringList.get(3));
 		
