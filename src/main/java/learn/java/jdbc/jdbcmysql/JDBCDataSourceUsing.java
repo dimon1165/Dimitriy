@@ -18,6 +18,7 @@ public class JDBCDataSourceUsing {
     public static void main(String[] args) {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setURL("jdbc:mysql://localhost:3306/mydb");
+        dataSource.setServerName("Luiziana");
         dataSource.setPassword("root");
         dataSource.setUser("root");
         Connection connection = null;
@@ -32,6 +33,9 @@ public class JDBCDataSourceUsing {
         }
         try {
             connection = dataSource.getConnection(USER_NAME, PASSWORD);
+            System.out.println(dataSource.getServerName());
+            System.out.println(dataSource.getPortNumber());
+            System.out.println(dataSource.getUrl());
             System.out.println(connection.getMetaData().getSQLKeywords());
             statement = connection.createStatement();
             statement.setFetchSize(3);
