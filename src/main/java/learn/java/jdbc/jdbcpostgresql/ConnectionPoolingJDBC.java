@@ -1,4 +1,4 @@
-package learn.java.jdbc;
+package learn.java.jdbc.jdbcpostgresql;
 
 import org.postgresql.ds.PGConnectionPoolDataSource;
 
