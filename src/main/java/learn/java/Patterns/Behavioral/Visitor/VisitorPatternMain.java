@@ -9,7 +9,7 @@ package learn.java.Patterns.Behavioral.Visitor;
  */
 public class VisitorPatternMain {
     public static void main(String[] args) {
-        ComputePart computePart =  new Computer();
+        ComputePart computePart =  new Mouse();
         computePart.accept(new ComputerPartDisplayVisitor());
     }
 }
