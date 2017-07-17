@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.Bridge;
+package learn.java.Patterns.Structural.bridge;
 
 /**
  * Created by dvorop on 11.07.2017.
