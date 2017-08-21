@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.decorator;
+package learn.java.Patterns.structural.decorator;
 
 import java.io.File;
 import java.io.FileOutputStream;

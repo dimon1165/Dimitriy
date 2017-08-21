@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.flyweight;
+package learn.java.Patterns.structural.flyweight;
 
 import javax.swing.*;
 

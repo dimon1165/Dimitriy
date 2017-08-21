@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.facade.complexlib;
+package learn.java.Patterns.structural.facade.complexlib;
 
 /**
  * Created by dvorop on 18.07.2017.

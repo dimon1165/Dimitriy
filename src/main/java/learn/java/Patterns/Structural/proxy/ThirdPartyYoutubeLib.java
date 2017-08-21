@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.proxy;
+package learn.java.Patterns.structural.proxy;
 
         import java.util.HashMap;
 

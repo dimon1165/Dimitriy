@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.composite;
+package learn.java.Patterns.structural.composite;
 
 import java.awt.*;
 

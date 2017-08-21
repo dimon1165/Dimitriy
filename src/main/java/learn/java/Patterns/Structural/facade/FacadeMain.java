@@ -1,6 +1,6 @@
-package learn.java.Patterns.Structural.facade;
+package learn.java.Patterns.structural.facade;
 
-import learn.java.Patterns.Structural.facade.complexlib.VideoConversionFacade;
+import learn.java.Patterns.structural.facade.complexlib.VideoConversionFacade;
 
 import java.io.File;
 

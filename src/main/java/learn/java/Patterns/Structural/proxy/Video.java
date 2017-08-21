@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.proxy;
+package learn.java.Patterns.structural.proxy;
 
 /**
  * Created by dvorop on 14.08.2017.

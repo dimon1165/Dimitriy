@@ -1,6 +1,5 @@
-package learn.java.Patterns.Structural.decorator;
+package learn.java.Patterns.structural.decorator;
 
-import javax.sql.*;
 import java.util.Base64;
 
 /**

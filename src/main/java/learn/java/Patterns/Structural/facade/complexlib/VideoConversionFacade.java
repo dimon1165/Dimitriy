@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.facade.complexlib;
+package learn.java.Patterns.structural.facade.complexlib;
 
 import java.io.File;
 

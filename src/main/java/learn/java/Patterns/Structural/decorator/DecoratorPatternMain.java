@@ -1,4 +1,4 @@
-package learn.java.Patterns.Structural.decorator;
+package learn.java.Patterns.structural.decorator;
 
 /**
  * Created by dvorop on 17.07.2017.

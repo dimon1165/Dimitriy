@@ -1,4 +1,4 @@
-package learn.java.Patterns.Behavioral.Visitor;
+package learn.java.Patterns.behavioral.Visitor;
 
 /**
  * Created by dvorop on 29.06.2017.
